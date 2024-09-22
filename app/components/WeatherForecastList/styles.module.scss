@@ -1,0 +1,49 @@
+.container {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #f0f8ff;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.title {
+  font-size: 1rem;
+  color: #999;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.forecastItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.forecastItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.forecastItem:first-child {
+  border-top: 1px solid #eee;
+  padding-top: 0;
+}
+
+.day {
+  flex: 1;
+  text-align: left;
+}
+
+.icon {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  margin: 0 1rem;
+}
+
+.temperature {
+  flex: 1;
+  text-align: right;
+}

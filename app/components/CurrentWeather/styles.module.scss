@@ -1,0 +1,32 @@
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.location {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.temperature {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1e90ff; // 深蓝色
+  margin-bottom: 10px;
+}
+
+.condition {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}

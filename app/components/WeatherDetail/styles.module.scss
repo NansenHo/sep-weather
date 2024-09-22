@@ -1,0 +1,33 @@
+.container {
+  padding: 1rem;
+}
+
+.weatherInfo section {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f0f8ff;
+  border-radius: 0.5rem;
+}
+
+.weatherInfo section:last-child {
+  margin-bottom: 0;
+}
+
+.weatherInfo h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.weatherInfo h3 {
+  font-size: 1rem;
+  color: #999;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  margin: 5px 0;
+  color: #555;
+}

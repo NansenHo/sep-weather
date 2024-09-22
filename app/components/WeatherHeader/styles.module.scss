@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: flex-end;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.button {
+  display: none;
+}
