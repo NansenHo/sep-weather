@@ -1,12 +1,14 @@
 import styles from "./styles.module.scss";
 
 interface WeatherHeaderProps {
-  value: string;
-  handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
-  handleLocationChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  readonly value: string;
+  readonly handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+  readonly handleLocationChange: (
+    e: React.ChangeEvent<HTMLInputElement>
+  ) => void;
 }
 
-export default function WeatherHeader({
+export function WeatherHeader({
   value,
   handleSubmit,
   handleLocationChange,

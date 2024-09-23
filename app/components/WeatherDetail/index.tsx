@@ -1,14 +1,12 @@
-// types
-import { WeatherData } from "@/app/types/weather";
-// styles
+import type { WeatherData } from "@/app/types";
 import styles from "./styles.module.scss";
 
 interface WeatherDetailProps {
-  singleDayWeather?: WeatherData;
-  date: string;
+  readonly singleDayWeather?: WeatherData;
+  readonly date: string;
 }
 
-export default function WeatherDetail({
+export function WeatherDetail({
   singleDayWeather,
   date,
 }: WeatherDetailProps) {

@@ -1,17 +1,12 @@
 "use client";
 
-// libraries
 import { useParams, useRouter } from "next/navigation";
 import { useState, useCallback } from "react";
 import { useAtom } from "jotai";
-// hooks
-import { useWeatherForecast } from "@/app/hooks/api/useWeatherForecast";
-// atoms
+
+import { WeatherHeader, WeatherDetail, Loading } from "@/app/components";
+import { useWeatherForecast } from "@/app/hooks";
 import { locationAtom } from "@/app/atoms";
-// components
-import WeatherHeader from "@/app/components/WeatherHeader";
-import WeatherDetail from "@/app/components/WeatherDetail";
-import Loading from "@/app/components/Loading";
 
 export default function WeatherDetailPage() {
   const [location, setLocation] = useAtom(locationAtom);

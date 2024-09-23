@@ -1,19 +1,17 @@
 "use client";
 
-// libraries
 import { useState, useCallback, useMemo } from "react";
 import { useAtom } from "jotai";
-// hooks
-import { useWeatherForecast } from "./hooks/api/useWeatherForecast";
-// atoms
+
+import { useWeatherForecast } from "@/app/hooks";
 import { locationAtom } from "@/app/atoms";
-// components
-import WeatherHeader from "./components/WeatherHeader";
-import CurrentWeather from "./components/CurrentWeather";
-import TodayHourlyWeather from "./components/TodayHourlyWeather";
-import WeatherForecastList from "./components/WeatherForecastList";
-// styles
-import Loading from "./components/Loading";
+import {
+  WeatherHeader,
+  CurrentWeather,
+  TodayHourlyWeather,
+  WeatherForecastList,
+  Loading,
+} from "@/app/components";
 
 export default function App() {
   const [location, setLocation] = useAtom(locationAtom);

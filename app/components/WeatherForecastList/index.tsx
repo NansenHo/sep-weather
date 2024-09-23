@@ -1,15 +1,13 @@
-// libraries
 import { useRouter } from "next/navigation";
-// types
-import { WeatherData } from "@/app/types/weather";
-// styles
+
+import type { WeatherData } from "@/app/types";
 import styles from "./styles.module.scss";
 
 interface WeatherForecastListProps {
-  forecastDayWeather: WeatherData["forecast"]["forecastday"];
+  readonly forecastDayWeather: WeatherData["forecast"]["forecastday"];
 }
 
-export default function WeatherForecastList({
+export function WeatherForecastList({
   forecastDayWeather,
 }: WeatherForecastListProps) {
   const router = useRouter();

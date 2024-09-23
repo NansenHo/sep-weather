@@ -1,9 +1,7 @@
-// libraries
 import useSWR from "swr";
-// utils
-import { weatherapiFetcher } from "@/app/utils/weatherapiFetcher";
-// types
-import { WeatherData } from "@/app/types/weather";
+
+import { weatherapiFetcher } from "@/app/utils";
+import type { WeatherData } from "@/app/types";
 
 export function useWeatherForecast(q: string, days: number, dt: string = "") {
   const { data, error, isLoading, mutate } = useSWR<WeatherData, Error>(

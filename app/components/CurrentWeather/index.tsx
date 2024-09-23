@@ -1,13 +1,11 @@
-// types
-import { WeatherData } from "@/app/types/weather";
-// styles
+import type { WeatherData } from "@/app/types";
 import styles from "./styles.module.scss";
 
 interface CurrentWeatherProps {
-  weatherData: WeatherData;
+  readonly weatherData: WeatherData;
 }
 
-export default function CurrentWeather({ weatherData }: CurrentWeatherProps) {
+export function CurrentWeather({ weatherData }: CurrentWeatherProps) {
   return (
     <>
       {weatherData && (

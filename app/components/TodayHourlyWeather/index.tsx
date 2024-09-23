@@ -1,14 +1,13 @@
-// types
-import { WeatherData } from "@/app/types/weather";
-// styles
+import { extractHourFromTime } from "@/app/utils";
+import type { WeatherData } from "@/app/types";
 import styles from "./styles.module.scss";
 
 interface TodayHourlyWeatherProps {
-  todayHourlyWeather: WeatherData["forecast"]["forecastday"][0]["hour"];
-  currentHour: number;
+  readonly todayHourlyWeather: WeatherData["forecast"]["forecastday"][0]["hour"];
+  readonly currentHour: number;
 }
 
-export default function TodayHourlyWeather({
+export function TodayHourlyWeather({
   todayHourlyWeather,
   currentHour,
 }: TodayHourlyWeatherProps) {
@@ -19,10 +18,10 @@ export default function TodayHourlyWeather({
       </header>
       <div className={styles.content}>
         {todayHourlyWeather
-          .filter((hour) => Number(hour.time.slice(11, 13)) >= currentHour)
+          .filter((hour) => extractHourFromTime(hour.time) >= currentHour)
           .map((hour) => (
             <div key={hour.time} className={styles.hourlyItem}>
-              <p className={styles.time}>{hour.time.slice(11, 13)}</p>
+              <p className={styles.time}>{extractHourFromTime(hour.time)}</p>
               <img
                 className={styles.icon}
                 width={36}
