@@ -1,3 +1,7 @@
+## other languages
+if you need a Chinese version instructions please check it here[README_CN.md](README_CN.md)。
+if you need a Japanese version instructions please check it here[README_JP.md](README_JP.md)。
+
 # Sep Weather
 
 <div align="center">
