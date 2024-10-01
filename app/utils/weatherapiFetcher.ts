@@ -3,7 +3,8 @@ import axios from "axios";
 const API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
 const BASE_URL = process.env.NEXT_PUBLIC_WEATHER_API_BASE_URL;
 
-if (!API_KEY || !BASE_URL) throw new Error("API_KEY is not defined");
+if (!API_KEY) throw new Error("API_KEY is not defined");
+if (!BASE_URL) throw new Error("BASE_URL is not defined");
 
 interface Params {
   key: string;
