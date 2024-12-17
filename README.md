@@ -1,7 +1,5 @@
-# Other Languages
-If you need Chinese version instructions please check them here [README_CN.md](README_CN.md)。
 
-If you need Japanese version instructions please check them here [README_JP.md](README_JP.md)。
+中文 | [README_CN.md](README_CN.md)&nbsp;&nbsp;&nbsp;日本語 | [README_JP.md](README_JP.md)
 
 # Sep Weather
 

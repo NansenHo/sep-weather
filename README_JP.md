@@ -1,3 +1,6 @@
+
+English | [README_EN.md](README.md)&nbsp;&nbsp;&nbsp;中文 | [README_CN.md](README_CN.md)
+
 # Sep Weather
 
 <div align="center">
