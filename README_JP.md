@@ -1,5 +1,5 @@
 
-English | [README_EN.md](README.md)&nbsp;&nbsp;&nbsp;中文 | [README_CN.md](README_CN.md)
+[English](README.md) | [中文](README_CN.md)
 
 # Sep Weather
 
